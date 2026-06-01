@@ -1,5 +1,25 @@
-convert saleae logic analyzer 2.x exported csv files to flipper sub format
+# Capture Conversion Tools
 
-python salcsv2sub.py [channel 0-7]
+> **Experimental — use at your own risk.**
 
-will not work on 1.x exported csv
+---
+
+## salcsv2sub.py
+
+Convert Saleae Logic Analyzer 2.x exported `.csv` files to Flipper `.sub` format.
+
+```
+python salcsv2sub.py digital.csv [channel 0-7]
+```
+
+Will **not** work on 1.x exported CSV.
+
+---
+
+## sub2sr.py
+
+Convert Flipper `.sub` to `.sr` (sigrok / PulseView) format.
+
+```
+python sub2sr.py RAW_signal.sub
+```
